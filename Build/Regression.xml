@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" verbose="5" parallel="tests">
+	<!-- <parameter name="selenium.host" value="127.0.0.1" /> <parameter name="selenium.port" 
+		value="4444" /> -->
+
+	<!-- Execution Data -->
+
+	<parameter name="ExecutionByXML" value="false" />
+	<parameter name="Browser" value="chrome" />
+	<parameter name="URL" value="http://192.168.0.147:8074/" />
+
+	<!-- Report listener -->
+	<listeners>
+		<listener class-name="com.SourcePro.Utility.CustomDetailReporter" />
+		<listener class-name="com.SourcePro.Utility.CustomReporterBuildSummary" />
+		<listener class-name="com.SourcePro.Utility.CustomReporter" />
+	</listeners>
+
+	<test name="Login_Login">
+		<classes>
+			<class name="com.SourcePro.Login.LoginIndex">
+				<methods>
+					<include name="login">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_Item Master Basic Detail - Entry">
+		<classes>
+			<class name="com.SourcePro.Materials.ItemMasterBasicDetailEntry.ItemMasterBasicDetailEntryIndex">
+				<methods>
+					<include name="ItemMasterBasicDetailEntryAdd">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_PO Maintenance New">
+		<classes>
+			<class name="com.SourcePro.Purchase.POMaintenanceNew.POMaintenanceNewIndex">
+				<methods>
+					<include name="add_POMaintenanceNew">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="Logout_Logout">
+		<classes>
+			<class name="com.SourcePro.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SourcePro" verbose="10" >
+
+	<listeners>
+		<listener class-name="com.sourcepro.utility.CustomDetailReporter" />
+		<listener class-name="com.sourcepro.utility.CustomReporterBuildSummary" />
+		<listener class-name="com.sourcepro.utility.CustomReporter" />
+		<listener class-name="com.sourcepro.reports.ExtentReportListener" />
+	</listeners>
+	
+	<parameter name="ExecutionByXML" value="true" />
+	<parameter name="Browser" value="chrome" />
+	<parameter name="URL" value="http://google.com`" />
+
+	<test name="Login_Do Loginnnnnn">
+		<classes>
+			<class name="com.sourcepro.Login.LoginIndex">
+				<methods>
+					<include name="login">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="Add_Item Master Basic Detail - Entry">
+		<classes>
+			<class name="com.sourcepro.Materials.ItemMasterBasicDetailEntry.ItemMasterBasicDetailEntryIndex">
+				<methods>
+					<include name="ItemMasterBasicDetailEntryAdd">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	<test name="Logout_Logout">
+		<classes>
+			<class name="com.sourcepro.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

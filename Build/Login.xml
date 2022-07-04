@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" verbose="1" parallel="false">
+	<!-- <parameter name="selenium.host" value="127.0.0.1" /> <parameter name="selenium.port" 
+		value="4444" /> -->
+
+	<!-- Execution Data -->
+
+	<parameter name="ExecutionByXML" value="false" />
+	<parameter name="Browser" value="chrome" />
+	<parameter name="URL" value="http://192.168.0.147:8074/" />
+
+	<!-- Report listener -->
+	<listeners>
+		<listener class-name="com.SourcePro.Utility.CustomDetailReporter" />
+		<listener
+			class-name="com.SourcePro.Utility.CustomReporterBuildSummary" />
+		<listener class-name="com.SourcePro.Utility.CustomReporter" />
+	</listeners>
+
+	<test name="Login_Do Login">
+		<classes>
+			<class name="com.SourcePro.Login.LoginIndex">
+				<methods>
+					<include name="login">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Login_Do Logout">
+		<classes>
+			<class name="com.SourcePro.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

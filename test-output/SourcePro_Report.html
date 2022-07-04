@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=utf-8' /> 
+<meta name='description' content='' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/bee7a4abdc590e21eec8618a90c81ff4d16e500a/dist/css/extent.css' type='text/css' rel='stylesheet' />
+<title>QA report</title>
+<style type='text/css'>
+</style>
+</head>
+<body class='extent standard default hide-overflow dark'>
+<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+<span><i class='material-icons'>desktop_windows</i></span>
+</div>
+<nav>
+<div class="nav-wrapper">
+<a href="#!" class="brand-logo blue darken-3">SA_QA</a>
+<!-- slideout menu -->
+<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+</ul>
+<!-- report name -->
+<span class='report-name'>Functional</span>
+<!-- report headline -->
+<span class='report-headline'></span>
+</div>
+</nav>
+<div class='container'>
+<div id='test-view' class='view'>
+<section id='controls'>
+<div class='controls grey lighten-4'>
+<!-- test toggle -->
+<div class='chip transparent'>
+<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+<i class='material-icons'>warning</i> Status
+</a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>verified</i></a></li>
+<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>bug_report</i></a></li>
+<li class='divider'></li>
+<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+</ul>
+</div>
+<!-- test toggle -->
+<!-- category toggle -->
+<div class='chip transparent'>
+<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+<i class='material-icons'>local_offer</i> Category
+</a>
+<ul id='category-toggle' class='dropdown-content'>
+<li><a href='#'>Login</a></li>
+<li><a href='#'>Logout</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+</ul>
+</div>
+<!-- category toggle -->
+<!-- clear filters -->
+<div class='chip transparent hide'>
+<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+<i class='material-icons'>close</i> Clear
+</a>
+</div>
+<!-- clear filters -->
+<!-- enable dashboard -->
+<div id='toggle-test-view-charts' class='chip transparent'>
+<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+<i class='material-icons'>track_changes</i> Dashboard
+</a>
+</div>
+<!-- enable dashboard -->
+<!-- search -->
+<!-- search -->
+</div>
+</section>
+<div id='test-view-charts' class='subview-full'>
+<div id='charts-row' class='row nm-v nm-h'>
+<div class='col s12 m6 l6 np-h'>
+<div class='card-panel nm-v'>
+<center>
+<div class='block text-small'>
+<h5> <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>0</span> test(s) passed</span> </h5>
+</div>
+<div class='block text-small'>
+<h5> <span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others </h5>
+</div>
+</center>
+</div>
+</div>
+<div class='col s12 m6 l6 np-h'>
+<div class='card-panel nm-v' id='parent-analysis1' >
+</div>
+</div>
+</div>
+</div>
+<div class='subview-left left'>
+<div class='view-summary'>
+<h5>Tests</h5>
+<ul id='test-collection' class='test-collection'>
+<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+<div class='test-heading'>
+<span class='test-name'>Do Loginnnnnn</span>
+<span class='test-time'>Jun 28, 2022, 12:04 pm IST</span>
+<span class='label end-time'style='float: right'>Fail</span>
+</div>
+<div class='test-content hide'>
+<div class='test-time-info'>
+<span class='label start-time'>Jun 28, 2022, 12:04 pm IST</span>
+<span class='label end-time'>Jun 28, 2022, 12:05 pm IST</span>
+<span class='label time-taken grey lighten-1 white-text'>00:00:41</span>
+</div>
+<div class='test-attributes'>
+<div class='category-list'>
+<span class='category label white-text'>Login</span>
+</div>
+<!--<div class='author-list'>
+</div>-->
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>STATUS</th>
+<th>TIMESTAMP</th>
+<th>DETAILS</th>
+</tr>
+</thead>
+<tbody>
+<tr class='log' status='info'>
+<td><span class='label start-time'>Pass</span></td>
+<td class='timestamp'>12:04:59 pm</td>
+<td class='step-details'>Open URL : http://google.com</br></td>
+</tr>
+<tr class='log' status='info'>
+<td><span class='label start-time'>Pass</span></td>
+<td class='timestamp'>12:04:59 pm</td>
+<td class='step-details'>Do login with valid email and password.</br></td>
+</tr>
+<tr class='log' status='info'>
+<td><span class='label start-time'>Pass</span></td>
+<td class='timestamp'>12:04:59 pm</td>
+<td class='step-details'>Do login with valid username and password.</br></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:04:59 pm</td>
+<td class='step-details'><a href='../test-output/screenshots/finalScreenshot_20220628120540650.png' target='new'><img src='../test-output/screenshots/finalScreenshot_20220628120540650.png' width='200' height='100'/></a></br></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:04:59 pm</td>
+<td class='step-details'><span class='label end-time'>Do Loginnnnnn is failed.</b></font></strong></br></span></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:07:08 pm</td>
+<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 15 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+	at com.sourcepro.Login.LoginIndexPage.doLogin(LoginIndexPage.java:42)
+	at com.sourcepro.Login.LoginIndex.login(LoginIndex.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@formcontrolname=&apos;userName&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;LAPTOP-3NPM5AHR&apos;, ip: &apos;192.168.1.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [715ae4e8036137c42728472c882c533e, findElement {using=xpath, value=//input[@formcontrolname=&apos;userName&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\patil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56988/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 715ae4e8036137c42728472c882c533e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
+	... 34 more
+
+</pre></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+<div class='test-heading'>
+<span class='test-name'>Logout</span>
+<span class='test-time'>Jun 28, 2022, 12:05 pm IST</span>
+<span class='label end-time'style='float: right'>Fail</span>
+</div>
+<div class='test-content hide'>
+<div class='test-time-info'>
+<span class='label start-time'>Jun 28, 2022, 12:05 pm IST</span>
+<span class='label end-time'>Jun 28, 2022, 12:07 pm IST</span>
+<span class='label time-taken grey lighten-1 white-text'>00:01:21</span>
+</div>
+<div class='test-attributes'>
+<div class='category-list'>
+<span class='category label white-text'>Logout</span>
+</div>
+<!--<div class='author-list'>
+</div>-->
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>STATUS</th>
+<th>TIMESTAMP</th>
+<th>DETAILS</th>
+</tr>
+</thead>
+<tbody>
+<tr class='log' status='info'>
+<td><span class='label start-time'>Pass</span></td>
+<td class='timestamp'>12:05:41 pm</td>
+<td class='step-details'>Click on drop down and click on logout.</br></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:05:41 pm</td>
+<td class='step-details'><a href='../test-output/screenshots/finalScreenshot_20220628120703476.png' target='new'><img src='../test-output/screenshots/finalScreenshot_20220628120703476.png' width='200' height='100'/></a></br></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:05:41 pm</td>
+<td class='step-details'><span class='label end-time'>Logout is failed.</b></font></strong></br></span></td>
+</tr>
+<tr class='log' status='fail'>
+<td><span class='label end-time'>Fail</span></td>
+<td class='timestamp'>12:07:08 pm</td>
+<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: AjaxElementLocator &apos;By.xpath: //div[@class=&apos;user-info text-right&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.sourcepro.init.Common.clickableElement(Common.java:582)
+	at com.sourcepro.Login.LoginIndexPage.logout(LoginIndexPage.java:91)
+	at com.sourcepro.Login.LoginIndex.logout(LoginIndex.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: org.openqa.selenium.NoSuchElementException: Timed out after 15 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;user-info text-right&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;LAPTOP-3NPM5AHR&apos;, ip: &apos;192.168.1.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [715ae4e8036137c42728472c882c533e, findElement {using=xpath, value=//div[@class=&apos;user-info text-right&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\patil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56988/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 715ae4e8036137c42728472c882c533e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
+	... 42 more
+
+</pre></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class='subview-right left'>
+<div class='view-summary'>
+<h5 class='test-name'></h5>
+</div>
+</div>
+<!-- subview right -->
+</div>
+<div id='category-view' class='view hide'>
+<section id='controls'>
+<div class='controls grey lighten-4'>
+<!-- search -->
+<!--<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+<a href="#" class='search-div'>
+<i class='material-icons'>search</i> Search
+</a>
+<div class='input-field left hide'>
+<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+</div>
+</div>
+<!-- search -->
+</div>
+</section>
+<div class='subview-left left'>
+<div class='view-summary'>
+<h5>Categories</h3>
+<ul id='category-collection' class='category-collection'>
+<li class='category displayed active'>
+<div class='category-heading'>
+<span class='category-name'>Login</span>
+<span class='category-status right'>
+<span class='label pass'>0</span>
+<span class='label fail'>1</span>
+</span>
+</div>
+<div class='category-content hide'>
+<div class='category-status-counts'>
+<span class='label green accent-4 white-text'>Passed: 0</span>
+<span class='label red lighten-1 white-text'>Failed: 1</span>
+</div>
+<div class='category-tests'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Timestamp</th>
+<th>TestName</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jun 28, 2022, 12:04 pm IST</td>
+<td class='linked' test-id='1'>Do Loginnnnnn</td>
+<td><span class='test-status fail'>fail</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li class='category displayed active'>
+<div class='category-heading'>
+<span class='category-name'>Logout</span>
+<span class='category-status right'>
+<span class='label pass'>0</span>
+<span class='label fail'>1</span>
+</span>
+</div>
+<div class='category-content hide'>
+<div class='category-status-counts'>
+<span class='label green accent-4 white-text'>Passed: 0</span>
+<span class='label red lighten-1 white-text'>Failed: 1</span>
+</div>
+<div class='category-tests'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Timestamp</th>
+<th>TestName</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jun 28, 2022, 12:05 pm IST</td>
+<td class='linked' test-id='1'>Logout</td>
+<td><span class='test-status fail'>fail</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class='subview-right left'>
+<div class='view-summary'>
+<h5 class='category-name'></h5>
+</div>
+</div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+<div class='card-panel transparent np-v'>
+<h5>Dashboard</h5>
+<div class='row'>
+<div class='col s2'>
+<div class='card-panel r'>
+Module
+<div class='panel-lead'>2</div>
+</div>
+</div>
+<div class='col s2'>
+<div class='card-panel r'>
+Total Test
+<div class='panel-lead'>2</div>
+</div>
+</div>
+<div class='col s2'>
+<div class='card-panel r'>
+Start
+<div class='panel-lead'>Jun 28, 2022, 12:04 pm IST</div>
+</div>
+</div>
+<div class='col s2'>
+<div class='card-panel r'>
+End
+<div class='panel-lead'>Jun 28, 2022, 12:07 pm IST</div>
+</div>
+</div>
+<div class='col s2'>
+<div class='card-panel r'>
+Time Taken
+<div class='panel-lead'>2.2 minutes</div>
+</div>
+</div>
+<div class='col s4'>
+<div class='card-panel dashboard-environment'>
+<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+<table>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>URL</td>
+<td>http://google.com</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome v102.0.5005.115</td>
+</tr>
+<tr>
+<td>Report Version</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Customized By</td>
+<td>Badal Shah</td>
+</tr>
+</table>
+</div>
+</div>
+<div class='col s4'>
+<div class='card-panel dashboard-categories'>
+<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+<table>
+<tr>
+<th>Name</th>
+<th>Passed</th>
+<th>Failed</th>
+<th>Others</th>
+</tr>
+<tr>
+<td>Login</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Logout</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+</div>
+<!-- container -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+</script>
+<script>
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Pass',     0],
+['Fail',     2],
+['Skip',    0]
+]);
+var options = {
+<!-- title: 'Build Summary',-->
+legend:{textStyle: {color: '#1C8490'}},
+'backgroundColor': 'transparent',
+pieHole: 0.4,
+pieSliceTextStyle: {color: '#1C8490'}};
+var chart = new google.visualization.PieChart(document.getElementById('parent-analysis1'));
+chart.draw(data, options);
+}
+</script>
+<script>
+var statusGroup = {
+passParent: 3,
+failParent: 1,
+fatalParent: 0,
+errorParent: 0,
+warningParent: 0,
+skipParent: 0,
+exceptionsParent: 1,
+passChild: 0,
+failChild: 2,
+fatalChild: 0,
+errorChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 4,
+exceptionsChild: 2,
+passGrandChild: 0,
+failGrandChild: 0,
+fatalGrandChild: 0,
+errorGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+exceptionsGrandChild: 0,
+};
+</script>
+<script src='https://cdn.jsdelivr.net/gh/anshooarora/extentreports-java@925c18aac5e7fe935676822f33803ab0444208e6/dist/js/extent.js' type='text/javascript'>
+</script>
+<script type='text/javascript'>
+ $(document).ready(function() {
+ $(document).ready(function() { $(".blue.darken-3").attr("href", "#"); });
+ $(document).ready(function() { $(".blue.darken-3").attr("href", "#"); });
+ $(document).ready(function() { $(".blue.darken-3").css("width","90px") });
+ $(document).ready(function() { $(".side-nav").css("width","90px") });
+ $(document).ready(function() { $(".side-nav i").css("width","35px") });
+ $(document).ready(function() { $(".container").css("padding-left","80px") });
+ $(document).ready(function() { $(".side-nav li").css("width","90px") });
+ $(document).ready(function() { $("nav .brand-logo").css("padding-left","25px") });
+ $(document).ready(function() { $("element.style").css("width","500px") });
+ <!-- $(document).ready(function() { $(".row .col.l6").css("width","100%") });-->
+  });
+</script>
+</body>
+</html>
